@@ -1,18 +1,25 @@
 # AI article generation
 
-This is a Single Page Application (SPA) built using Vite, Node.js, and integrated with a backend API. The application allows users to manage teams and players with a drag-and-drop interface, user authentication, and more.
+Article generator basing on text downloaded from internet with HTML and images generation.
 
-## Features
-- **User Authentication**: Users can register, log in, and access a dashboard.
-- **Team and Player Management**: Add, edit, and delete teams and players via forms.
-- **Drag-and-Drop Interface**: Allows manipulation of graphical elements using the Konva.js library.
-- **API Integration**: Fetches and posts data to the backend using Axios.
-
+## How it works
+- Article is downloaded from internet
+- OpenAI is used to generate the the article contents
+- PNG file names and descriptions are extracted from article
+- Images are generated basing on descriptions and saved to extracted paths
 ## Installation
 
 To get started with the project, follow these steps:
 
-1. **Clone the repository:**
+1. **Clone the repository and run the test:**
    ```bash
-   git clone https://github.com/your-username/project-name.git
-   cd project-name
+   git clone https://github.com/bieniu2/AIGeneration.git
+   cd AIGeneration
+   
+
+2. **In test.py replace API_KEY with another one (the one given in repository has been blocked due to exposing it on public github repository):**
+   python test.py
+
+3. **Run python file:**
+   ```bash
+   python main.py
